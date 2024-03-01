@@ -15,3 +15,5 @@ COPY . .
 RUN go build -o warpgpt
 
 CMD redis-server & sleep 3 & ./warpgpt
+
+EXPOSE 5000
